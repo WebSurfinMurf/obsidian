@@ -11,7 +11,7 @@ echo "========================================="
 echo ""
 
 # Load Keycloak admin password from secrets
-KEYCLOAK_SECRETS="/home/administrator/secrets/keycloak.env"
+KEYCLOAK_SECRETS="$HOME/projects/secrets/keycloak.env"
 if [ ! -f "$KEYCLOAK_SECRETS" ]; then
     echo "ERROR: Keycloak secrets file not found at $KEYCLOAK_SECRETS"
     exit 1
@@ -63,7 +63,7 @@ echo "Groups mapper created"
 echo ""
 
 # Update secrets file
-SECRETS_FILE="/home/administrator/secrets/obsidian.env"
+SECRETS_FILE="$HOME/projects/secrets/obsidian.env"
 if [ -f "$SECRETS_FILE" ]; then
     sed -i "s/KEYCLOAK_CLIENT_SECRET=REPLACE_ME/KEYCLOAK_CLIENT_SECRET=$CLIENT_SECRET/" "$SECRETS_FILE"
     sed -i "s/OAUTH2_PROXY_CLIENT_SECRET=REPLACE_ME/OAUTH2_PROXY_CLIENT_SECRET=$CLIENT_SECRET/" "$SECRETS_FILE"

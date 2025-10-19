@@ -3,7 +3,7 @@
 set -e
 
 PROJECT_DIR="/home/administrator/projects/obsidian"
-SECRETS_FILE="/home/administrator/secrets/obsidian.env"
+SECRETS_FILE="$HOME/projects/secrets/obsidian.env"
 
 echo "========================================="
 echo "Obsidian Deployment Script"

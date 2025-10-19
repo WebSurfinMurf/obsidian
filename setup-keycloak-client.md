@@ -27,9 +27,9 @@
 
 1. Go to the **Credentials** tab
 2. Copy the **Client secret**
-3. Update `/home/administrator/secrets/obsidian.env`:
+3. Update `$HOME/projects/secrets/obsidian.env`:
    ```bash
-   nano /home/administrator/secrets/obsidian.env
+   nano $HOME/projects/secrets/obsidian.env
    # Update these lines with the client secret from Keycloak:
    # KEYCLOAK_CLIENT_SECRET=<paste-secret-here>
    # OAUTH2_PROXY_CLIENT_SECRET=<paste-secret-here>

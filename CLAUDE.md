@@ -81,7 +81,7 @@ Internet → Traefik (traefik-net)
 
 ### Environment Variables
 
-Location: `/home/administrator/secrets/obsidian.env`
+Location: `$HOME/projects/secrets/obsidian.env`
 
 **Container Settings:**
 - `PUID=1000` - User ID for file permissions
@@ -149,7 +149,7 @@ cat /home/administrator/projects/obsidian/setup-keycloak-client.md
 
 After creating the Keycloak client:
 ```bash
-nano /home/administrator/secrets/obsidian.env
+nano $HOME/projects/secrets/obsidian.env
 # Update KEYCLOAK_CLIENT_SECRET and OAUTH2_PROXY_CLIENT_SECRET
 ```
 
@@ -479,7 +479,7 @@ docker stats obsidian
 
 ### Secret Management
 
-- All secrets stored in `/home/administrator/secrets/obsidian.env`
+- All secrets stored in `$HOME/projects/secrets/obsidian.env`
 - Secrets loaded via environment variable substitution
 - **Never commit** secrets to git (.gitignore configured)
 - No secrets stored in projects/obsidian directory

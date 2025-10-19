@@ -23,7 +23,7 @@ Follow the manual instructions to create the Keycloak client.
 
 After creating the Keycloak client:
 ```bash
-nano /home/administrator/secrets/obsidian.env
+nano $HOME/projects/secrets/obsidian.env
 # Update KEYCLOAK_CLIENT_SECRET and OAUTH2_PROXY_CLIENT_SECRET
 ```
 
