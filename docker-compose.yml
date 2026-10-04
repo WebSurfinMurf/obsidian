@@ -15,6 +15,7 @@ services:
     volumes:
       - /home/administrator/projects/data/obsidian:/config
       - /home/administrator/projects/ainotes:/config/vaults/ainotes
+      - /home/administrator/projects/data/ai-servicers:/config/vaults/ai-servicers
       - /home/administrator/projects/open-webui/docs/knowledge:/config/vaults/ainotes/knowledge-sync
     # PUID, PGID, TZ loaded from env_file
     shm_size: "1gb"
